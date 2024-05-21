@@ -31,7 +31,7 @@
             <div class="row mb-1" >
                 <div class="col-md-12 my-3" >
                     <img src="{% static 'img/modern-art.png' %}" 
-                        style="width: 100%; height: 170px; object-fit: cover;" >
+                        style="width: 100%; height: 80px; object-fit: cover;" >
                 </div>
             </div>
 
@@ -73,273 +73,214 @@
                 </nav>
 
                 <!-- Contenido de las pestañas -->
-                <div class="tab-content mt-5" id="nav-tabContent">
+                <div class="container my-5">
+                    <div class="tab-content mt-5" id="nav-tabContent">
 
-                    <!-- Contenido Tab HOME -->
-                    <div class="tab-pane fade show active justified" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <h4>Biografía</h4>  
-                        <p>¡Bienvenido a mi portafolio! Soy un apasionado analista de datos con experiencia en la exploración, limpieza y análisis de datos para generar insights significativos. Mi objetivo es utilizar mis habilidades en ciencia de datos para ayudar a las empresas a tomar decisiones informadas y estratégicas.</p>
-                        <br>
-                        <h4>Áreas de interés</h4>
-                        <p>Como Analista de Datos con una fuerte inclinación hacia el Data Science, me apasiona explorar y descubrir el potencial oculto en los datos. Mi enfoque se centra en utilizar técnicas analíticas avanzadas para extraer información valiosa y generar conocimientos significativos.</p>
-                        
-                        <div class="">
-                            <ul class="mb-0">
-                                <li class="text-italic">Análisis exploratorio de datos (EDA)</li>
-                                <li class="text-italic">Machine Learning</li>
-                                <li class="text-italic">Visualización de datos</li>
-                                <li class="text-italic">Programación y desarrollo</li>
-                                <li class="text-italic">Optimización de procesos</li>
-                                <li class="text-italic">Ética y privacidad de datos:</li>
-                                <li class="text-italic">Aprendizaje continuo</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Contenido Tab PORTAFOLIO -->
-                    <div class="tab-pane fade" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
-                        <section class="">
-
-                            <!-- Contenido PROYECTOS -->
-                            <div class="container">
-
-                                <!-- Nueva fila -->
-                                <div class="row">
-
-                                    <!-- Columna izquierda -->
-                                    <!-- PROYECTO 1 -->
-                                    <div class="col-lg-4 mt-3 d-flex align-items-stretch">
-                                        <div class="card h-100">
-
-                                            <!-- Imagen -->
-                                            <img src="{% static 'img/iris.png' %}" class="card-img-top" style="width: 100%; height: 120px; object-fit: cover;">
-                                            
-                                            <!-- Contenido -->
-                                            <div class="card-body d-flex flex-column">
-                                                <h4 class="card-title">PROYECTO IRIS</h4>
-                                                <h6 class="card-subtitle mb-2 text-muted">Modelo Clasificador de Flores Iris</h6>
-                                                <p class="card-text mb-4">El proyecto clasifica flores Iris utilizando aprendizaje automático para predecir la especie según sus características. 
-                                                    Con el conjunto de datos Iris como base, proporciona una solución precisa para identificar especies a partir de mediciones específicas.</p>
-                                                <a href="{% url 'iris' %}" class="card-link"><button class="btn btn-info w-100">Ir al proyecto</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Columna central -->
-                                    <!-- PROYECTO 2 -->
-                                    <div class="col-lg-4 mt-3 px-3 d-flex align-items-stretch">
-                                        <div class="card h-100">
-
-                                            <!-- Imagen -->
-                                            <img src="{% static 'img/house.png' %}" class="card-img-top" style="width: 100%; height: 120px; object-fit: cover;">
-                                            
-                                            <!-- Contenido -->
-                                            <div class="card-body d-flex flex-column">
-                                                <h4 class="card-title">PROYECTO PRECIO DE CASAS</h4>
-                                                <h6 class="card-subtitle mb-2 text-muted">Modelo para estimar el precio de casas</h6>
-                                                <p class="card-text mb-4">
-                                                    El proyecto busca crear un modelo predictivo para estimar precios de casas usando técnicas de aprendizaje automático.
-                                                    Se analizarán datos con atributos como tamaño, calidad general, baños y antigüedad.</p>
-                                                <a href="{% url 'casa' %}" class="card-link"><button class="btn btn-info w-100">Ir al proyecto</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Columna derecha -->
-                                    <!-- PROYECTO 3 -->
-                                    <div class="col-lg-4 mt-3 px-3 d-flex align-items-stretch">
-                                        <div class="card h-100">
-
-                                            <!-- Imagen -->
-                                            <img src="{% static 'img/diabetes.png' %}" class="card-img-top" style="width: 100%; height: 120px; object-fit: cover;">
-                                            
-                                            <!-- Contenido -->
-                                            <div class="card-body d-flex flex-column">
-                                                <h4 class="card-title">PROYECTO DIABETES</h4>
-                                                <h6 class="card-subtitle mb-2 text-muted">Modelo para estimar diabetes</h6>
-                                                <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque aut dignissimos.</p>
-                                                <a href="#" class="card-link">
-                                                    <button class="btn btn-info w-100" onclick="sweetAlertMessage('Poyecto en proceso')">Ir al proyecto</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-                    <!-- Contenido Tab CV -->
-                    <div class="tab-pane fade" id="nav-cv" role="tabpanel" aria-labelledby="nav-cv-tab">
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <!-- Contenido Tab HOME -->
+                        <div class="tab-pane fade show active justified" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <h4>Biografía</h4>  
+                            <p>¡Bienvenido a mi portafolio! Soy un apasionado analista de datos con experiencia en la exploración, limpieza y análisis de datos para generar insights significativos. Mi objetivo es utilizar mis habilidades en ciencia de datos para ayudar a las empresas a tomar decisiones informadas y estratégicas.</p>
+                            <br>
+                            <h4>Áreas de interés</h4>
+                            <p>Analista de Datos con una fuerte inclinación hacia el Data Science, me apasiona explorar y descubrir el potencial oculto en los datos. Mi enfoque se centra en utilizar técnicas analíticas avanzadas para extraer información valiosa y generar conocimientos significativos.</p>
                             
-                            <!-- Sección PERFIL -->
-                            <div class="accordion-item">
+                            <div class="">
+                                <ul class="mb-0">
+                                    <li class="text-italic">Análisis exploratorio de datos (EDA)</li>
+                                    <li class="text-italic">Machine Learning</li>
+                                    <li class="text-italic">Visualización de datos</li>
+                                    <li class="text-italic">Programación y desarrollo</li>
+                                    <li class="text-italic">Optimización de procesos</li>
+                                    <li class="text-italic">Ética y privacidad de datos</li>
+                                    <li class="text-italic">Aprendizaje continuo</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Contenido Tab PORTAFOLIO -->
+                        <div class="tab-pane fade" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
+                            <section class="">
+
+                                <!-- Contenido PROYECTOS -->
+                                <div class="container">
+
+                                    <!-- Nueva fila -->
+                                    <div class="row">
+
+                                        <!-- Columna izquierda -->
+                                        <!-- PROYECTO 1 -->
+                                        <div class="col-lg-4 mt-3 d-flex align-items-stretch">
+                                            <div class="card h-100">
+
+                                                <!-- Imagen -->
+                                                <img src="{% static 'img/iris.png' %}" class="card-img-top" style="width: 100%; height: 120px; object-fit: cover;">
+                                                
+                                                <!-- Contenido -->
+                                                <div class="card-body d-flex flex-column">
+                                                    <h4 class="card-title">PROYECTO IRIS</h4>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Modelo Clasificador de Flores Iris</h6>
+                                                    <p class="card-text mb-4">El proyecto clasifica flores Iris utilizando aprendizaje automático para predecir la especie según sus características. 
+                                                        Con el conjunto de datos Iris como base, proporciona una solución precisa para identificar especies a partir de mediciones específicas.</p>
+                                                    <a href="{% url 'iris' %}" class="card-link"><button class="btn btn-info w-100">Ir al proyecto</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Columna central -->
+                                        <!-- PROYECTO 2 -->
+                                        <div class="col-lg-4 mt-3 px-3 d-flex align-items-stretch">
+                                            <div class="card h-100">
+
+                                                <!-- Imagen -->
+                                                <img src="{% static 'img/house.png' %}" class="card-img-top" style="width: 100%; height: 120px; object-fit: cover;">
+                                                
+                                                <!-- Contenido -->
+                                                <div class="card-body d-flex flex-column">
+                                                    <h4 class="card-title">PROYECTO PRECIO DE CASAS</h4>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Modelo para estimar el precio de casas</h6>
+                                                    <p class="card-text mb-4">
+                                                        El proyecto busca crear un modelo predictivo para estimar precios de casas usando técnicas de aprendizaje automático.
+                                                        Se analizarán datos con atributos como tamaño, calidad general, baños y antigüedad.</p>
+                                                    <a href="{% url 'casa' %}" class="card-link"><button class="btn btn-info w-100">Ir al proyecto</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Columna derecha -->
+                                        <!-- PROYECTO 3 -->
+                                        <div class="col-lg-4 mt-3 px-3 d-flex align-items-stretch">
+                                            <div class="card h-100">
+
+                                                <!-- Imagen -->
+                                                <img src="{% static 'img/diabetes.png' %}" class="card-img-top" style="width: 100%; height: 120px; object-fit: cover;">
+                                                
+                                                <!-- Contenido -->
+                                                <div class="card-body d-flex flex-column">
+                                                    <h4 class="card-title">PROYECTO DIABETES</h4>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Modelo para estimar diabetes</h6>
+                                                    <p class="card-text mb-4"></p>
+                                                    <a href="#" class="card-link">
+                                                        <button class="btn btn-info w-100" onclick="sweetAlertMessage('Poyecto en proceso')">Ir al proyecto</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Contenido Tab CV -->
+                        <div class="tab-pane fade" id="nav-cv" role="tabpanel" aria-labelledby="nav-cv-tab">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
                                 
-                                <!-- Título -->
-                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                    PERFIL
-                                    </button>
-                                </h2>
+                                <!-- Sección PERFIL -->
+                                <div class="accordion-item">
+                                    
+                                    <!-- Título -->
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        PERFIL
+                                        </button>
+                                    </h2>
 
-                                <!-- Contenido -->
-                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                                    <div class="accordion-body">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.  
-                                        Officiis, a quas eligendi animi sed dicta recusandae! Qui nobis nemo quidem, illum possimus optio, rerum hic eius repellendus asperiores, labore esse ducimus aut nulla libero obcaecati debitis distinctio. Voluptatibus fugit molestiae, repellendus adipisci impedit placeat quia officiis distinctio, optio, in ad odit enim quae maiores accusamus error hic dolorem veniam iure amet minus ipsum sequi! Libero, tempora magnam voluptatum quod at sunt eaque natus labore dolorem maxime facere veritatis consectetur delectus sequi nulla fuga praesentium ratione. 
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Sección EDUCACIÓN -->
-                            <div class="accordion-item">
-
-                                <!-- Título -->
-                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                    EDUCACIÓN
-                                    </button>
-                                </h2>
-
-                                <!-- Contenido -->
-                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                                    <div class="accordion-body">
-                                        <div class="row">
-                                            <div class="col-1 text-center">
-                                                20XX-20XX
-                                            </div>
-                                            <div class="col-11">
-                                                <p><span class=""><strong>DOCTORADO EN PYTHON</strong></span> | UNIVERSIDAD DE LOS ANDES</p>
-                                                <P>ESPECIALIZACIÓN: LOREM IPSUM. </P>
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dicta dolores dolor fugit a minima cumque quia eveniet nostrum qui labore, minus provident accusantium consequuntur obcaecati id aliquid at sit beatae iusto magnam nihil!</p>
-                                                <hr>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-1 text-center">
-                                                20XX-20XX
-                                            </div>
-                                            <div class="col-11">
-                                                <p><span class=""><strong>MAESTRÍA EN CIENCIAS EN PYTHON</strong></span> | UNIVERSIDAD DE CHILE</p>
-                                                <P>ESPECIALIZACIÓN: LOREM IPSUM. </P>
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dicta dolores dolor fugit a minima cumque quia eveniet nostrum qui labore, minus provident accusantium consequuntur obcaecati id aliquid at sit beatae iusto magnam nihil!</p>
-                                                <hr>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-1 text-center">
-                                                20XX-20XX
-                                            </div>
-                                            <div class="col-11">
-                                                <p><span class=""><strong>LICENCIATURA EN PYTHON</strong></span> | UNIVERSIDAD AUTÓNOMA DE NUEVO LEÓN</p>
-                                                <P>ESPECIALIZACIÓN: LOREM IPSUM. </P>
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dicta dolores dolor fugit a minima cumque quia eveniet nostrum qui labore, minus provident accusantium consequuntur obcaecati id aliquid at sit beatae iusto magnam nihil!</p>
-                                            </div>
+                                    <!-- Contenido -->
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body">
+                                            Analista programador con experiencia en desarrollo de software y sólidos conocimientos en Python y SQL. Apasionado por el análisis de datos y data science, con habilidades en Pandas, NumPy y Matplotlib. Demostrada capacidad en desarrollo de modelos predictivos y machine learning. Busco contribuir al éxito de proyectos de análisis de datos y de negocio con mis habilidades técnicas y comerciales en un entorno colaborativo. 
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Sección EXPERIENCIA LABORAL  -->
-                            <div class="accordion-item">
+                                <!-- Sección EDUCACIÓN -->
+                                <div class="accordion-item">
 
-                                <!-- Título -->
-                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                    EXPERIENCIA LABORAL
-                                    </button>
-                                </h2>
+                                    <!-- Título -->
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        EDUCACIÓN
+                                        </button>
+                                    </h2>
 
-                                <!-- Contenido -->
-                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                                    <div class="accordion-body">
-                                        <div class="row">
-                                            <div class="col-1 text-center">
-                                                20XX-20XX
-                                            </div>
-                                            <div class="col-11">
-                                                <p><span class=""><strong>CIENTÍFICO DE DATOS</strong></span> | EMPRESA X</p>
-                                                <P>Departamento: Lorem ipsum. </P>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolore voluptatum maiores doloribus neque repellendus quas consequuntur magni, labore voluptates tempora placeat praesentium fugit non sunt excepturi enim.</p>
-                                                
-                                                <div class="">
-                                                    <ul class="mb-0">
-                                                        <li class="text-italic">Actividad 1</li>
-                                                        <li class="text-italic">Actividad 2</li>
-                                                        <li class="text-italic">Actividad 3</li>
-                                                    </ul>
+                                    <!-- Contenido -->
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-1 text-center">
+                                                    2020–2023
                                                 </div>
-                                                <hr>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-1 text-center">
-                                                20XX-20XX
-                                            </div>
-                                            <div class="col-11">
-                                                <p><span class=""><strong>ANALISTA DE DATOS</strong></span> | EMPRESA X</p>
-                                                <P>Departamento: Lorem ipsum. </P>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolore voluptatum maiores doloribus neque repellendus quas consequuntur magni, labore voluptates tempora placeat praesentium fugit non sunt excepturi enim.</p>
-                                                
-                                                <div class="">
-                                                    <ul class="mb-0">
-                                                        <li class="text-italic">Actividad 1</li>
-                                                        <li class="text-italic">Actividad 2</li>
-                                                        <li class="text-italic">Actividad 3</li>
-                                                    </ul>
-                                                </div>
-                                                <hr>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-1 text-center">
-                                                20XX-20XX
-                                            </div>
-                                            <div class="col-11">
-                                                <p><span class=""><strong>ANALISTA DE DATOS JR.</strong></span> | EMPRESA X</p>
-                                                <P>Departamento: Lorem ipsum. </P>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolore voluptatum maiores doloribus neque repellendus quas consequuntur magni, labore voluptates tempora placeat praesentium fugit non sunt excepturi enim.</p>
-                                                
-                                                <div class="">
-                                                    <ul class="mb-0">
-                                                        <li class="text-italic">Actividad 1</li>
-                                                        <li class="text-italic">Actividad 2</li>
-                                                        <li class="text-italic">Actividad 3</li>
-                                                    </ul>
+                                                <div class="col-11">
+                                                    <p><span class=""><strong>ANALISTA PROGRAMADOR</strong></span> | IP SANTO TOMÁS</p>
+                                                    </p>
+                                                    <hr>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- Sección EXPERIENCIA LABORAL  -->
+                                <div class="accordion-item">
+
+                                    <!-- Título -->
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        EXPERIENCIA LABORAL
+                                        </button>
+                                    </h2>
+
+                                    <!-- Contenido -->
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-1 text-center">
+                                                    2023-2023
+                                                </div>
+                                                <div class="col-11"><strong>DESARROLLADOR WEB</strong></span> | EMPRESA BEAHYBRID SPA </p>
+                                                    <P>Departamento: Tecnología.</P>
+                                                    <p>Creación de una aplicación móvil en Android con la versión 5.1 y Kotlin para la transmisión de la cámara en tiempo real.</p>
+                                                    
+                                                    <div class="">
+                                                        <ul class="mb-0">
+                                                            <li class="text-italic">Desarrollo de una aplicación móvil en Android.</li>
+                                                            <li class="text-italic">Creación de un reproductor web</li>
+                                                            <li class="text-italic">Instalación y configuración de Nginx mediante SSH</li>
+                                                        </ul>
+                                                    </div>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
                             </div>
-                            <br>
+                        </div>
+
+                        <!-- Contenido Tab CONTACT -->
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="col text-center">
+                                <h4>
+                                    E-mail
+                                </h4>
+                                <p><a class="text-info" style="font-size: 1.3rem;" href="mailto:correo@miempresa.com">heberthcaripa@gmail.com</a></p>
+                                <br>
+                                <h4>
+                                    WhatsApp
+                                </h4>
+                                <p>
+                                    <a class="text-info" style="font-size: 1.3rem;" target="_blank" href="https://wa.me/528888888888/">
+                                        CL +56 (9) 5893 9817 
+                                        <span class="icon-stack text-info">
+                                            <i class="bi-whatsapp"></i>
+                                        </span>
+                                    </a> 
+                                </p>
+                                <br>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Contenido Tab CONTACT -->
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <div class="col text-center">
-                            <h4>
-                                E-mail
-                            </h4>
-                            <p><a class="text-info" style="font-size: 1.3rem;" href="mailto:correo@miempresa.com">heberthcaripa@gmail.com</a></p>
-                            <br>
-                            <h4>
-                                WhatsApp
-                            </h4>
-                            <p>
-                                <a class="text-info" style="font-size: 1.3rem;" target="_blank" href="https://wa.me/528888888888/">
-                                    CL +56 (9) 5893 9817 
-                                    <span class="icon-stack text-info">
-                                        <i class="bi-whatsapp"></i>
-                                    </span>
-                                </a> 
-                            </p>
-                            <br>
-                        </div>
-                    </div>
-                </div>
+                </div>    
             </div>
             
         </div>
